@@ -1,9 +1,13 @@
+//Crystal Collector Game
+//Created by Clay Palumbo
+
 //Crystal birds random #
 $(document).ready(function() {
-    var random = Math.floor(Math.random() * 100 + 20);
-    $('#cbNumber').text(random);
+    crystalNumber = Math.floor(Math.random() * 100 + 20);
+    $('#cbNumber').text(crystalNumber);
 });
 
+var crystalNumber = Math.floor(Math.random() * 100 + 20);
 var randomNumbers = [];     //4 cyrstals number array
 var total = 0;              //total 
 var wins = 0;               //win count
@@ -22,8 +26,8 @@ fourRandomNumbers();
 
 //reset
 function reset() {
-    random = Math.floor(Math.random() * 100 + 20);
-    $('#cbNumber').text(random);
+    crystalNumber = Math.floor(Math.random() * 100 + 20);
+    $('#cbNumber').text(crystalNumber);
     randomNumbers = [];
     fourRandomNumbers ();
     total = 0;
@@ -52,10 +56,10 @@ $('#blue').on("click", function() {
     $('#yourNumber').text(total);
 
     //win/lose conditions
-    if (total == random) {
+    if (total == crystalNumber) {
         youWon();
     }
-    else if (total > random) {
+    else if (total > crystalNumber) {
         youLose();
     }
 })
@@ -65,10 +69,10 @@ $('#green').on("click", function() {
     $('#yourNumber').text(total);
 
     //win/lose conditions
-    if (total == random) {
+    if (total == crystalNumber) {
         youWon();
     }
-    else if (total > random) {
+    else if (total > crystalNumber) {
         youLose();
     }
 })
@@ -78,10 +82,10 @@ $('#purple').on("click", function() {
     $('#yourNumber').text(total);
 
     //win/lose conditions
-    if (total == random) {
+    if (total == crystalNumber) {
         youWon();
     }
-    else if (total > random) {
+    else if (total > crystalNumber) {
         youLose();
     }
 })
@@ -91,10 +95,10 @@ $('#yellow').on("click", function() {
     $('#yourNumber').text(total);
 
     //win/lose conditions
-    if (total == random) {
+    if (total == crystalNumber) {
         youWon();
     }
-    else if (total > random) {
+    else if (total > crystalNumber) {
         youLose();
     }
 });
