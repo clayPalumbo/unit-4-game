@@ -3,11 +3,11 @@
 
 //Crystal birds random #
 $(document).ready(function() {
-    crystalNumber = Math.floor(Math.random() * 100 + 20);
+    crystalNumber = Math.floor(Math.random() * 120 + 19);
     $('#cbNumber').text(crystalNumber);
 });
 
-var crystalNumber = Math.floor(Math.random() * 100 + 20);
+var crystalNumber = Math.floor(Math.random() * 120 + 19);
 var randomNumbers = [];     //4 cyrstals number array
 var total = 0;              //total 
 var wins = 0;               //win count
@@ -26,7 +26,7 @@ fourRandomNumbers();
 
 //reset
 function reset() {
-    crystalNumber = Math.floor(Math.random() * 100 + 20);
+    crystalNumber = Math.floor(Math.random() * 120 + 19);
     $('#cbNumber').text(crystalNumber);
     randomNumbers = [];
     fourRandomNumbers ();
