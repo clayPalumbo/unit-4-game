@@ -1,76 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Collector</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
+	<title>Video Game Trivia</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
+
+	<!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
 </head>
-
 <body>
-    <div>
-        <h1 class="display-4 text-center">Crystal Collector</h1>
-        <div class="col-md-12 text-center">
-                <img src="../unit-4-game/assets/images/bird-2.gif" alt="head" width="200">
-        </div>
-    </div>
-    <p class="lead text-center">Welcome to Crystal Collector! In this game, the weird crystal bird will assign a certain value to each jewel below. In
-        order to win, you must match your total score with his number. If you go above his total score, you lose.
-        <br> Good Luck!
-    </p>
-    <hr class="my-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <img src="../unit-4-game/assets/images/Blue-Diamond.png" id="blue" alt="blue" width="130">
-                <img src="../unit-4-game/assets/images/Green_Jewel.png" id="green" alt="green" width="130">
-                <img src="../unit-4-game/assets/images/Purple_Jewel.png" id="purple" alt="purple" width="130">
-                <img src="../unit-4-game/assets/images/Yellow_Jewel.png" id="yellow" alt="yellow" width="130">
 
-                <hr class="my-4">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h3>Crystal Bird's Number:</h3>
-                <h4>
-                    <span id="cbNumber"></span>
-                </h4>
-            </div>
-            <div class="col-md-6 text-center">
-                <h3>Your Number:</h3>
-                <h4>
-                    <span id="yourNumber"></span>
-                </h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h3>Wins:</h3>
-                <h4>
-                    <span id="wins"></span>
-                </h4>
-            </div>
-            <div class="col-md-6 text-center">
-                <h3>Losses:</h3>
-                <h4>
-                    <span id="losses"></span>
-                </h4>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
-        <script src="assets/javascript/game.js"></script>
+	<div class="container">
+
+	<h1 id="topText">Welcome to Music Trivia!</h1>
+
+	<div class="jumbotron text-center" id="gameScreen">
+		<h1 id="start">START</h1>
+	</div>
+
+	<h2 id="bottomText" class="text-right">Show us what you got!</h2>
+
+	</div>
+
 </body>
-
 </html>

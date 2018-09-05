@@ -1,13 +1,47 @@
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    color: white;
+body { 
+	background: url(../images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background-image: url("../images/Background-2.jpg");
-    background-repeat: no-repeat;
-    height: 100%;
-    background-size: cover;
+html {
+	cursor: url(../images/controller.png), auto;
+}
 
+h1,
+h2,
+h3 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: black;
+	padding: 25px;
+}
+
+.answer,
+#timer {
+	font-weight: 900;
+}
+
+#start {
+	color: black;
+}
+
+.choices {
+	text-align: center;
+	border: groove 2px black;
+	border-radius: 5%;
+	margin: 0 35%;
+}
+
+.choices:hover {
+	background-color: red;
+	color: white;
+}
+
+#gameScreen {
+	-webkit-box-shadow: 7px 5px 47px 0px rgb(0, 251, 255);
+	-moz-box-shadow: 7px 5px 47px 0px rgb(0, 251, 255);
+	box-shadow: 7px 5px 47px 0px rgb(0, 251, 255);
 }
